@@ -1,0 +1,8 @@
+# Full validation run — all domains, 5 samples/cell, Claude Opus judge
+run_id: "full"
+adapter_id: "semantic-redaction-ko"
+judge_model: "claude-opus-4-5"
+max_cost_usd: 150.0
+sample_per_cell: 5
+domains: []
+difficulties: []

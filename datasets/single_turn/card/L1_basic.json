@@ -1,0 +1,95 @@
+[
+  {
+    "id": "card-L1-001",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "지난주 강남 스타벅스에서 두 번 결제됐는데 뭔가요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX001",
+          "merchant": "스타벅스 강남2호점",
+          "amount": 6800,
+          "status": "approved",
+          "timestamp": "2025-04-28T14:32:11"
+        },
+        {
+          "id": "TX002",
+          "merchant": "SBUX GANGNAM STN",
+          "amount": 6800,
+          "status": "cancelled",
+          "timestamp": "2025-04-28T14:33:58"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "두 건 모두 스타벅스 강남 지점 결제입니다. TX001(6,800원)은 승인됐고 TX002(6,800원)는 취소됐습니다. 승인/취소 쌍이므로 실제 청구는 6,800원 1건입니다.",
+    "reference_facts": [
+      "커피전문점 결제",
+      "같은 금액 6800원",
+      "승인 후 취소 쌍",
+      "실제 청구 1건"
+    ],
+    "tags": ["duplicate_charge", "approved_cancelled_pair", "coffee_chain"],
+    "notes": "가장 기본적인 카드 거래 조회 시나리오"
+  },
+  {
+    "id": "card-L1-002",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "어제 편의점에서 결제한 거 맞아요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX010",
+          "merchant": "GS25 역삼점",
+          "amount": 3200,
+          "status": "approved",
+          "timestamp": "2025-04-29T19:14:05"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "네, 어제 19:14에 GS25 역삼점에서 3,200원이 승인 결제됐습니다.",
+    "reference_facts": [
+      "편의점 결제",
+      "3200원",
+      "승인됨",
+      "어제 저녁"
+    ],
+    "tags": ["convenience_store", "single_transaction"],
+    "notes": "단순 거래 확인"
+  },
+  {
+    "id": "card-L1-003",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 카드 사용액 얼마예요?",
+    "raw_context": {
+      "monthly_summary": {
+        "year_month": "2025-04",
+        "total_amount": 487300,
+        "transaction_count": 23,
+        "top_category": "식음료"
+      }
+    },
+    "history": [],
+    "reference_answer": "이번 달(4월) 카드 사용액은 총 487,300원이며 23건 결제됐습니다. 가장 많이 쓴 카테고리는 식음료입니다.",
+    "reference_facts": [
+      "총액 약 48만원",
+      "23건",
+      "식음료 최다"
+    ],
+    "tags": ["monthly_summary", "spending_overview"],
+    "notes": "월별 사용 요약 조회"
+  }
+]

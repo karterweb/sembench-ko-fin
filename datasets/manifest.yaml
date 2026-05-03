@@ -1,0 +1,26 @@
+# sembench-ko-fin dataset manifest
+# Each entry points to a JSON file containing a list of BenchCase objects.
+
+version: "0.1"
+
+single_turn:
+  card:
+    - single_turn/card/L1_basic.json
+    - single_turn/card/L2_reasoning.json
+  insurance:
+    - single_turn/insurance/L1_basic.json
+  debt:
+    - single_turn/debt/L1_basic.json
+    - single_turn/debt/L2_reasoning.json
+
+multi_turn:
+  card:
+    - multi_turn/card/L2_dispute.json
+
+adversarial:
+  - adversarial/L3_crossref.json
+  - adversarial/L4_regulatory.json
+
+# CI smoke: uses sample_per_cell=1, only card L1 for fast gate
+ci_smoke:
+  - single_turn/card/L1_basic.json

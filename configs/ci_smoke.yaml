@@ -1,0 +1,8 @@
+# CI smoke — 1 case/cell, card L1 only, low cost cap
+run_id: "ci-smoke"
+adapter_id: "semantic-redaction-ko"
+judge_model: "claude-haiku-3-5"
+max_cost_usd: 5.0
+sample_per_cell: 1
+domains: ["card"]
+difficulties: ["L1"]
