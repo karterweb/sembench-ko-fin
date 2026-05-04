@@ -91,5 +91,499 @@
     ],
     "tags": ["monthly_summary", "spending_overview"],
     "notes": "월별 사용 요약 조회"
+  },
+  {
+    "id": "card-L1-004",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "지난달 일본에서 결제한 건 뭔가요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX050",
+          "merchant": "LAWSON SHINJUKU",
+          "amount_jpy": 1200,
+          "amount_krw": 10800,
+          "currency": "JPY",
+          "status": "approved",
+          "timestamp": "2025-03-15T10:22:00",
+          "fee_krw": 216
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "지난달 3월 15일 일본 신주쿠 로손 편의점에서 1,200엔(약 10,800원) 결제됐습니다. 해외결제 수수료 216원이 별도로 부과됩니다.",
+    "reference_facts": [
+      "해외결제 JPY",
+      "편의점 결제",
+      "10800원 상당",
+      "수수료 216원"
+    ],
+    "tags": ["overseas_transaction", "foreign_currency", "convenience_store"],
+    "notes": "해외결제 조회"
+  },
+  {
+    "id": "card-L1-005",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "캐시백 얼마나 받았나요?",
+    "raw_context": {
+      "cashback_summary": {
+        "year_month": "2025-04",
+        "total_cashback": 8500,
+        "categories": [
+          {"category": "주유", "amount": 5000},
+          {"category": "편의점", "amount": 3500}
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "이번 달 캐시백 적립 총액은 8,500원입니다. 주유 5,000원, 편의점 3,500원으로 나뉩니다.",
+    "reference_facts": [
+      "총 캐시백 8500원",
+      "주유 5000원",
+      "편의점 3500원"
+    ],
+    "tags": ["cashback_inquiry"],
+    "notes": "캐시백 조회"
+  },
+  {
+    "id": "card-L1-006",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "올해 연회비 언제 나가나요?",
+    "raw_context": {
+      "card_info": {
+        "card_name": "신한 딥드림 카드",
+        "annual_fee": 15000,
+        "billing_month": "05",
+        "waiver_condition": "전월 실적 30만원 이상"
+      }
+    },
+    "history": [],
+    "reference_answer": "신한 딥드림 카드 연회비 15,000원은 5월에 청구됩니다. 단, 전월 실적 30만원 이상이면 면제됩니다.",
+    "reference_facts": [
+      "연회비 15000원",
+      "5월 청구",
+      "30만원 실적 조건 면제"
+    ],
+    "tags": ["annual_fee"],
+    "notes": "연회비 조회"
+  },
+  {
+    "id": "card-L1-007",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이마트 결제를 3개월 할부로 바꿀 수 있나요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX080",
+          "merchant": "이마트 은평점",
+          "amount": 89000,
+          "status": "approved",
+          "timestamp": "2025-04-30T15:45:00",
+          "installment_changeable": true,
+          "max_installment_months": 12,
+          "deadline": "2025-05-05"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이마트 은평점 89,000원 결제를 3개월 할부로 변경 가능합니다. 변경 마감일은 5월 5일입니다. 최대 12개월까지 가능합니다.",
+    "reference_facts": [
+      "할부 변경 가능",
+      "89000원",
+      "마감 5월 5일",
+      "최대 12개월"
+    ],
+    "tags": ["installment_payment"],
+    "notes": "할부 변경 조회"
+  },
+  {
+    "id": "card-L1-008",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "포인트 사용해서 결제할 수 있나요?",
+    "raw_context": {
+      "point_balance": {
+        "total_points": 12400,
+        "min_redemption": 1000,
+        "expiring_points": 3200,
+        "expiry_date": "2025-06-30"
+      }
+    },
+    "history": [],
+    "reference_answer": "현재 보유 포인트는 12,400포인트입니다. 1,000포인트 이상부터 결제 시 사용 가능합니다. 6월 30일까지 소멸 예정 포인트가 3,200포인트 있으니 먼저 사용하시길 권장합니다.",
+    "reference_facts": [
+      "보유 포인트 12400",
+      "최소 사용 1000포인트",
+      "소멸 예정 3200포인트"
+    ],
+    "tags": ["point_redemption"],
+    "notes": "포인트 사용 조회"
+  },
+  {
+    "id": "card-L1-009",
+    "domain": "card",
+    "service": "fraud_alert",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "방금 모르는 결제 문자가 왔어요. 어디서 결제된 건가요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX099",
+          "merchant": "NETFLIX.COM",
+          "amount": 17000,
+          "status": "approved",
+          "timestamp": "2025-04-30T23:55:01",
+          "ip_country": "US",
+          "is_recurring": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "방금 23:55에 미국 넷플릭스 구독 결제 17,000원이 승인됐습니다. 정기결제 항목입니다. 본인이 가입한 결제가 맞는지 확인하시고, 이상거래로 의심되면 즉시 분쟁 신청 해드리겠습니다.",
+    "reference_facts": [
+      "넷플릭스 미국 결제",
+      "17000원",
+      "정기결제",
+      "이상거래 의심 가능"
+    ],
+    "tags": ["fraud_alert", "overseas_transaction", "subscription_billing"],
+    "notes": "이상거래 알림"
+  },
+  {
+    "id": "card-L1-010",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 최소결제금액이 얼마예요?",
+    "raw_context": {
+      "billing": {
+        "year_month": "2025-04",
+        "total_due": 356000,
+        "minimum_payment": 35600,
+        "due_date": "2025-05-14"
+      }
+    },
+    "history": [],
+    "reference_answer": "이번 달 청구금액은 356,000원이며 최소결제금액은 35,600원입니다. 납부 기한은 5월 14일입니다.",
+    "reference_facts": [
+      "최소결제 35600원",
+      "총 청구 356000원",
+      "납부 기한 5월 14일"
+    ],
+    "tags": ["minimum_payment"],
+    "notes": "최소결제 조회"
+  },
+  {
+    "id": "card-L1-011",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 결제일이 언제예요?",
+    "raw_context": {
+      "billing": {
+        "statement_closing_date": "2025-04-20",
+        "payment_due_date": "2025-05-14",
+        "total_due": 298500
+      }
+    },
+    "history": [],
+    "reference_answer": "이번 달 결제마감일은 4월 20일이었고, 납부 기한은 5월 14일입니다. 청구 예정 금액은 298,500원입니다.",
+    "reference_facts": [
+      "결제마감 4월 20일",
+      "납부 기한 5월 14일",
+      "청구액 298500원"
+    ],
+    "tags": ["statement_closing"],
+    "notes": "결제일 조회"
+  },
+  {
+    "id": "card-L1-012",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "카드 한도 얼마예요?",
+    "raw_context": {
+      "card_limit": {
+        "total_limit": 5000000,
+        "used": 1230000,
+        "available": 3770000,
+        "cash_advance_limit": 1000000
+      }
+    },
+    "history": [],
+    "reference_answer": "카드 총 한도는 500만원이며 현재 123만원 사용 중입니다. 잔여 한도는 377만원이고, 현금 서비스 한도는 100만원입니다.",
+    "reference_facts": [
+      "총 한도 500만원",
+      "잔여 한도 377만원",
+      "현금 서비스 100만원"
+    ],
+    "tags": ["card_limit"],
+    "notes": "카드 한도 조회"
+  },
+  {
+    "id": "card-L1-013",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "넷플릭스 구독료가 왜 두 달치 청구됐죠?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX110",
+          "merchant": "NETFLIX.COM",
+          "amount": 17000,
+          "status": "approved",
+          "timestamp": "2025-04-01T00:01:00",
+          "note": "3월 미청구분 이월"
+        },
+        {
+          "id": "TX111",
+          "merchant": "NETFLIX.COM",
+          "amount": 17000,
+          "status": "approved",
+          "timestamp": "2025-04-30T00:01:00",
+          "note": "4월 정기결제"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "넷플릭스 정기결제가 두 건 청구됐습니다. 4월 1일 건은 3월 미청구분 이월 결제이고, 4월 30일 건은 4월 정기결제입니다. 각 17,000원으로 총 34,000원 청구됩니다.",
+    "reference_facts": [
+      "두 달치 청구",
+      "3월 이월분 포함",
+      "각 17000원",
+      "총 34000원"
+    ],
+    "tags": ["subscription_billing", "double_billing"],
+    "notes": "구독 자동결제 중복 조회"
+  },
+  {
+    "id": "card-L1-014",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "ATM에서 현금 인출했는데 수수료가 얼마예요?",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX120",
+          "type": "cash_advance",
+          "atm_bank": "우리은행",
+          "amount": 200000,
+          "fee": 1000,
+          "status": "approved",
+          "timestamp": "2025-04-29T18:30:00"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "어제 18:30에 우리은행 ATM에서 현금 20만원 인출 시 수수료 1,000원이 부과됐습니다.",
+    "reference_facts": [
+      "현금 인출 200000원",
+      "수수료 1000원",
+      "우리은행 ATM"
+    ],
+    "tags": ["atm_withdrawal"],
+    "notes": "현금 인출 수수료 조회"
+  },
+  {
+    "id": "card-L1-015",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "교통카드 충전 내역 보여주세요.",
+    "raw_context": {
+      "transactions": [
+        {
+          "id": "TX130",
+          "type": "transit_charge",
+          "merchant": "T-MONEY 자동충전",
+          "amount": 30000,
+          "status": "approved",
+          "timestamp": "2025-04-25T07:55:00"
+        },
+        {
+          "id": "TX131",
+          "type": "transit_charge",
+          "merchant": "T-MONEY 자동충전",
+          "amount": 30000,
+          "status": "approved",
+          "timestamp": "2025-04-10T08:12:00"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 교통카드(T-MONEY) 자동충전이 2건 있습니다. 4월 10일 30,000원, 4월 25일 30,000원으로 총 60,000원 충전됐습니다.",
+    "reference_facts": [
+      "T-MONEY 자동충전",
+      "2건 각 30000원",
+      "총 60000원"
+    ],
+    "tags": ["transit_card"],
+    "notes": "교통카드 충전 조회"
+  },
+  {
+    "id": "card-L1-016",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "해외 ATM에서 인출하면 수수료가 얼마예요?",
+    "raw_context": {
+      "card_info": {
+        "card_name": "KB국민 해외결제 카드",
+        "overseas_atm_fee_percent": 1.0,
+        "overseas_atm_fixed_fee_usd": 3.0,
+        "currency_conversion_fee_percent": 1.4
+      }
+    },
+    "history": [],
+    "reference_answer": "KB국민 해외결제 카드로 해외 ATM 인출 시 인출액의 1.0%+미화 3달러 고정 수수료, 그리고 환전 수수료 1.4%가 부과됩니다.",
+    "reference_facts": [
+      "인출액의 1.0%",
+      "미화 3달러 고정 수수료",
+      "환전 수수료 1.4%"
+    ],
+    "tags": ["overseas_atm"],
+    "notes": "해외 ATM 수수료 안내"
+  },
+  {
+    "id": "card-L1-017",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 납부 기한이 언제까지예요?",
+    "raw_context": {
+      "billing": {
+        "year_month": "2025-04",
+        "payment_due_date": "2025-05-14",
+        "total_due": 412000,
+        "late_fee_rate": 0.18
+      }
+    },
+    "history": [],
+    "reference_answer": "이번 달 납부 기한은 5월 14일입니다. 청구액은 412,000원이며, 기한 초과 시 연 18% 연체이자가 부과됩니다.",
+    "reference_facts": [
+      "납부 기한 5월 14일",
+      "청구액 412000원",
+      "연체이자 연 18%"
+    ],
+    "tags": ["payment_due_date"],
+    "notes": "납부 기한 조회"
+  },
+  {
+    "id": "card-L1-018",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "지금 카드 잔액(한도 잔여) 얼마 남았어요?",
+    "raw_context": {
+      "card_limit": {
+        "total_limit": 3000000,
+        "used": 870000,
+        "available": 2130000
+      }
+    },
+    "history": [],
+    "reference_answer": "현재 카드 한도 잔여액은 2,130,000원입니다. 총 한도 300만원 중 87만원 사용 중입니다.",
+    "reference_facts": [
+      "잔여 한도 2130000원",
+      "총 한도 300만원",
+      "사용 중 87만원"
+    ],
+    "tags": ["balance_inquiry"],
+    "notes": "잔액 조회"
+  },
+  {
+    "id": "card-L1-019",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "최근 결제 내역 5건 보여주세요.",
+    "raw_context": {
+      "transactions": [
+        {"id": "TX200", "merchant": "올리브영 홍대점", "amount": 32000, "status": "approved", "timestamp": "2025-04-30T16:11:00"},
+        {"id": "TX201", "merchant": "배달의민족", "amount": 21500, "status": "approved", "timestamp": "2025-04-29T20:30:00"},
+        {"id": "TX202", "merchant": "교보문고 광화문", "amount": 18000, "status": "approved", "timestamp": "2025-04-29T12:45:00"},
+        {"id": "TX203", "merchant": "GS25 역삼점", "amount": 2700, "status": "approved", "timestamp": "2025-04-28T09:05:00"},
+        {"id": "TX204", "merchant": "이디야커피 강남점", "amount": 4500, "status": "approved", "timestamp": "2025-04-28T08:52:00"}
+      ]
+    },
+    "history": [],
+    "reference_answer": "최근 결제 5건: 1) 올리브영 홍대점 32,000원(4/30), 2) 배달의민족 21,500원(4/29), 3) 교보문고 광화문 18,000원(4/29), 4) GS25 역삼점 2,700원(4/28), 5) 이디야커피 강남점 4,500원(4/28).",
+    "reference_facts": [
+      "최근 5건",
+      "올리브영 32000원",
+      "배달의민족 21500원"
+    ],
+    "tags": ["recent_transactions"],
+    "notes": "최근 내역 조회"
+  },
+  {
+    "id": "card-L1-020",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "포인트 소멸 예정인 거 있나요?",
+    "raw_context": {
+      "point_balance": {
+        "total_points": 45800,
+        "expiring_soon": [
+          {"points": 8200, "expiry_date": "2025-05-31", "reason": "2023년 적립 포인트 유효기간 만료"},
+          {"points": 3500, "expiry_date": "2025-06-30", "reason": "이벤트 포인트 만료"}
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "소멸 예정 포인트가 있습니다. 5월 31일에 8,200포인트(2023년 적립 포인트 만료), 6월 30일에 3,500포인트(이벤트 포인트 만료)가 소멸됩니다. 합계 11,700포인트이니 먼저 사용하세요.",
+    "reference_facts": [
+      "소멸 예정 포인트 11700",
+      "5월 31일 8200포인트",
+      "6월 30일 3500포인트"
+    ],
+    "tags": ["reward_points_expiry"],
+    "notes": "포인트 소멸 안내"
   }
 ]
