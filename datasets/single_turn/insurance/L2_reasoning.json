@@ -1,0 +1,322 @@
+[
+  {
+    "id": "insurance-L2-001",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-002",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-003",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-004",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-005",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-006",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "token",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-007",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-008",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-009",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L2-010",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "실손이 있는데 왜 전액 보상이 아닌가요?",
+    "raw_context": {
+      "claim": {
+        "treatment_taxonomy": "diagnostic_imaging_mri",
+        "covered": true,
+        "deductible_band": "medium",
+        "non_covered_items_present": true
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense"
+      }
+    },
+    "history": [],
+    "reference_answer": "실손 보장 대상이어도 자기부담금과 비급여 항목 때문에 전액 보상이 아닐 수 있습니다.",
+    "reference_facts": [
+      "자기부담금",
+      "비급여",
+      "전액 보상 아님"
+    ],
+    "tags": [
+      "coverage_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

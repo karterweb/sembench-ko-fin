@@ -1,0 +1,167 @@
+[
+  {
+    "id": "securities-L2-001",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "수익률은 플러스인데 평가금액이 줄어든 이유가 뭐예요?",
+    "raw_context": {
+      "portfolio": {
+        "return_rate": "positive_low",
+        "valuation_change": "down"
+      },
+      "cashflows": [
+        {
+          "type": "withdrawal",
+          "amount_band": "medium"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "운용 수익률은 소폭 플러스였지만 중간 출금이 있어 전체 평가금액은 감소했습니다.",
+    "reference_facts": [
+      "수익률 플러스",
+      "출금 발생",
+      "평가금액 감소"
+    ],
+    "tags": [
+      "portfolio_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L2-002",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "수익률은 플러스인데 평가금액이 줄어든 이유가 뭐예요?",
+    "raw_context": {
+      "portfolio": {
+        "return_rate": "positive_low",
+        "valuation_change": "down"
+      },
+      "cashflows": [
+        {
+          "type": "withdrawal",
+          "amount_band": "medium"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "운용 수익률은 소폭 플러스였지만 중간 출금이 있어 전체 평가금액은 감소했습니다.",
+    "reference_facts": [
+      "수익률 플러스",
+      "출금 발생",
+      "평가금액 감소"
+    ],
+    "tags": [
+      "portfolio_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L2-003",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "수익률은 플러스인데 평가금액이 줄어든 이유가 뭐예요?",
+    "raw_context": {
+      "portfolio": {
+        "return_rate": "positive_low",
+        "valuation_change": "down"
+      },
+      "cashflows": [
+        {
+          "type": "withdrawal",
+          "amount_band": "medium"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "운용 수익률은 소폭 플러스였지만 중간 출금이 있어 전체 평가금액은 감소했습니다.",
+    "reference_facts": [
+      "수익률 플러스",
+      "출금 발생",
+      "평가금액 감소"
+    ],
+    "tags": [
+      "portfolio_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L2-004",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "수익률은 플러스인데 평가금액이 줄어든 이유가 뭐예요?",
+    "raw_context": {
+      "portfolio": {
+        "return_rate": "positive_low",
+        "valuation_change": "down"
+      },
+      "cashflows": [
+        {
+          "type": "withdrawal",
+          "amount_band": "medium"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "운용 수익률은 소폭 플러스였지만 중간 출금이 있어 전체 평가금액은 감소했습니다.",
+    "reference_facts": [
+      "수익률 플러스",
+      "출금 발생",
+      "평가금액 감소"
+    ],
+    "tags": [
+      "portfolio_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L2-005",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "수익률은 플러스인데 평가금액이 줄어든 이유가 뭐예요?",
+    "raw_context": {
+      "portfolio": {
+        "return_rate": "positive_low",
+        "valuation_change": "down"
+      },
+      "cashflows": [
+        {
+          "type": "withdrawal",
+          "amount_band": "medium"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "운용 수익률은 소폭 플러스였지만 중간 출금이 있어 전체 평가금액은 감소했습니다.",
+    "reference_facts": [
+      "수익률 플러스",
+      "출금 발생",
+      "평가금액 감소"
+    ],
+    "tags": [
+      "portfolio_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

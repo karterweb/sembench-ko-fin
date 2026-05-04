@@ -1,0 +1,28 @@
+name: Validation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 18 * * 0"
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+      - run: uv sync --extra dev
+      - run: uv run pytest tests/ -q
+      - run: uv run python scripts/check_dataset_pii.py
+      - run: uv run sembench run --config configs/full.yaml --out results/full.json
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - run: uv run sembench report html --input results/full.json --out results/full.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: |
+            results/full.json
+            results/full.html

@@ -1,7 +1,7 @@
 """HTTP adapter — delegates redact/rehydrate to a REST service."""
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, cast
 
 import httpx
 
@@ -26,7 +26,7 @@ class HttpAdapter(PseudonymizationAdapter):
             json={"utterance": raw_utterance, "context": raw_context},
         )
         resp.raise_for_status()
-        return resp.json()["payload"]
+        return cast(dict[str, Any], resp.json()["payload"])
 
     def rehydrate(self, external_response: str, raw_context: dict[str, Any]) -> str:
         resp = self._client.post(
@@ -34,4 +34,4 @@ class HttpAdapter(PseudonymizationAdapter):
             json={"response": external_response, "context": raw_context},
         )
         resp.raise_for_status()
-        return resp.json()["result"]
+        return str(resp.json()["result"])

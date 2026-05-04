@@ -1,0 +1,192 @@
+[
+  {
+    "id": "banking-L2-001",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "잔액이 있는데 자동이체가 왜 실패했나요?",
+    "raw_context": {
+      "balance_timeline": [
+        {
+          "time": "morning",
+          "balance_band": "low"
+        },
+        {
+          "time": "after_salary",
+          "balance_band": "medium"
+        }
+      ],
+      "payment": {
+        "token": "PAY_A",
+        "attempt_time": "morning",
+        "status": "failed_insufficient_balance"
+      }
+    },
+    "history": [],
+    "reference_answer": "자동이체 시도 시점에는 잔액이 낮았고, 급여 입금은 그 이후라 실패한 것으로 보입니다.",
+    "reference_facts": [
+      "시도 시점 잔액 부족",
+      "급여 입금 이후",
+      "시간 순서"
+    ],
+    "tags": [
+      "time_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L2-002",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "잔액이 있는데 자동이체가 왜 실패했나요?",
+    "raw_context": {
+      "balance_timeline": [
+        {
+          "time": "morning",
+          "balance_band": "low"
+        },
+        {
+          "time": "after_salary",
+          "balance_band": "medium"
+        }
+      ],
+      "payment": {
+        "token": "PAY_A",
+        "attempt_time": "morning",
+        "status": "failed_insufficient_balance"
+      }
+    },
+    "history": [],
+    "reference_answer": "자동이체 시도 시점에는 잔액이 낮았고, 급여 입금은 그 이후라 실패한 것으로 보입니다.",
+    "reference_facts": [
+      "시도 시점 잔액 부족",
+      "급여 입금 이후",
+      "시간 순서"
+    ],
+    "tags": [
+      "time_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L2-003",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "잔액이 있는데 자동이체가 왜 실패했나요?",
+    "raw_context": {
+      "balance_timeline": [
+        {
+          "time": "morning",
+          "balance_band": "low"
+        },
+        {
+          "time": "after_salary",
+          "balance_band": "medium"
+        }
+      ],
+      "payment": {
+        "token": "PAY_A",
+        "attempt_time": "morning",
+        "status": "failed_insufficient_balance"
+      }
+    },
+    "history": [],
+    "reference_answer": "자동이체 시도 시점에는 잔액이 낮았고, 급여 입금은 그 이후라 실패한 것으로 보입니다.",
+    "reference_facts": [
+      "시도 시점 잔액 부족",
+      "급여 입금 이후",
+      "시간 순서"
+    ],
+    "tags": [
+      "time_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L2-004",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "잔액이 있는데 자동이체가 왜 실패했나요?",
+    "raw_context": {
+      "balance_timeline": [
+        {
+          "time": "morning",
+          "balance_band": "low"
+        },
+        {
+          "time": "after_salary",
+          "balance_band": "medium"
+        }
+      ],
+      "payment": {
+        "token": "PAY_A",
+        "attempt_time": "morning",
+        "status": "failed_insufficient_balance"
+      }
+    },
+    "history": [],
+    "reference_answer": "자동이체 시도 시점에는 잔액이 낮았고, 급여 입금은 그 이후라 실패한 것으로 보입니다.",
+    "reference_facts": [
+      "시도 시점 잔액 부족",
+      "급여 입금 이후",
+      "시간 순서"
+    ],
+    "tags": [
+      "time_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L2-005",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "잔액이 있는데 자동이체가 왜 실패했나요?",
+    "raw_context": {
+      "balance_timeline": [
+        {
+          "time": "morning",
+          "balance_band": "low"
+        },
+        {
+          "time": "after_salary",
+          "balance_band": "medium"
+        }
+      ],
+      "payment": {
+        "token": "PAY_A",
+        "attempt_time": "morning",
+        "status": "failed_insufficient_balance"
+      }
+    },
+    "history": [],
+    "reference_answer": "자동이체 시도 시점에는 잔액이 낮았고, 급여 입금은 그 이후라 실패한 것으로 보입니다.",
+    "reference_facts": [
+      "시도 시점 잔액 부족",
+      "급여 입금 이후",
+      "시간 순서"
+    ],
+    "tags": [
+      "time_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

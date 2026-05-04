@@ -1,8 +1,9 @@
 # sembench default run config
 run_id: "default"
 adapter_id: "semantic-redaction-ko"
-judge_model: "claude-opus-4-5"
+judge_model: "mock-judge"
 max_cost_usd: 100.0
 sample_per_cell: 5
 domains: []      # empty = all
 difficulties: [] # empty = all
+ensemble_judge_for_difficulties: ["L3", "L4"]

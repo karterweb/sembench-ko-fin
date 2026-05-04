@@ -31,7 +31,8 @@ class AnthropicProvider(LLMProvider):
             system=system,
             messages=[{"role": "user", "content": user}],
         )
-        content = msg.content[0].text if msg.content else ""
+        first_block = msg.content[0] if msg.content else None
+        content = getattr(first_block, "text", "") if first_block else ""
         in_tok = msg.usage.input_tokens
         out_tok = msg.usage.output_tokens
         return _AnthropicResponse(content=content, input_tokens=in_tok, output_tokens=out_tok, model=self._model)

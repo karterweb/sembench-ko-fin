@@ -1,0 +1,462 @@
+[
+  {
+    "id": "card-MT-L2-001",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-002",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-003",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-004",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-005",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-006",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "token",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-007",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-008",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-009",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-MT-L2-010",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "그럼 실제 청구는 몇 건이야?",
+    "raw_context": {
+      "transactions": [
+        {
+          "token": "TX_A",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "approved"
+        },
+        {
+          "token": "TX_B",
+          "category": "coffee_chain",
+          "amount_relation": "same_amount",
+          "status": "cancelled"
+        }
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "지난주 결제 중 이상한 거 있어?"
+      },
+      {
+        "role": "assistant",
+        "content": "같은 금액의 커피전문점 승인/취소 후보가 있습니다."
+      }
+    ],
+    "reference_answer": "승인 1건과 취소 1건의 쌍이므로 실제 청구는 1건으로 보는 것이 합리적입니다.",
+    "reference_facts": [
+      "승인 1건",
+      "취소 1건",
+      "실제 청구 1건"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

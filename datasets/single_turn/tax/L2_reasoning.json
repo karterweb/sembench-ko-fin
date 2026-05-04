@@ -1,0 +1,162 @@
+[
+  {
+    "id": "tax-L2-001",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "카드 공제가 생각보다 낮은 이유가 뭐예요?",
+    "raw_context": {
+      "spend": {
+        "credit_card_band": "high",
+        "debit_card_band": "low",
+        "traditional_market_band": "low"
+      },
+      "threshold": {
+        "met": true,
+        "excess_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "총 사용액은 높지만 공제율이 높은 체크카드와 전통시장 사용 비중이 낮고, 공제 기준 초과분이 적어 공제액이 낮을 수 있습니다.",
+    "reference_facts": [
+      "체크카드 낮음",
+      "전통시장 낮음",
+      "기준 초과분 낮음"
+    ],
+    "tags": [
+      "tax_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L2-002",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "카드 공제가 생각보다 낮은 이유가 뭐예요?",
+    "raw_context": {
+      "spend": {
+        "credit_card_band": "high",
+        "debit_card_band": "low",
+        "traditional_market_band": "low"
+      },
+      "threshold": {
+        "met": true,
+        "excess_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "총 사용액은 높지만 공제율이 높은 체크카드와 전통시장 사용 비중이 낮고, 공제 기준 초과분이 적어 공제액이 낮을 수 있습니다.",
+    "reference_facts": [
+      "체크카드 낮음",
+      "전통시장 낮음",
+      "기준 초과분 낮음"
+    ],
+    "tags": [
+      "tax_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L2-003",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "카드 공제가 생각보다 낮은 이유가 뭐예요?",
+    "raw_context": {
+      "spend": {
+        "credit_card_band": "high",
+        "debit_card_band": "low",
+        "traditional_market_band": "low"
+      },
+      "threshold": {
+        "met": true,
+        "excess_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "총 사용액은 높지만 공제율이 높은 체크카드와 전통시장 사용 비중이 낮고, 공제 기준 초과분이 적어 공제액이 낮을 수 있습니다.",
+    "reference_facts": [
+      "체크카드 낮음",
+      "전통시장 낮음",
+      "기준 초과분 낮음"
+    ],
+    "tags": [
+      "tax_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L2-004",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "카드 공제가 생각보다 낮은 이유가 뭐예요?",
+    "raw_context": {
+      "spend": {
+        "credit_card_band": "high",
+        "debit_card_band": "low",
+        "traditional_market_band": "low"
+      },
+      "threshold": {
+        "met": true,
+        "excess_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "총 사용액은 높지만 공제율이 높은 체크카드와 전통시장 사용 비중이 낮고, 공제 기준 초과분이 적어 공제액이 낮을 수 있습니다.",
+    "reference_facts": [
+      "체크카드 낮음",
+      "전통시장 낮음",
+      "기준 초과분 낮음"
+    ],
+    "tags": [
+      "tax_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L2-005",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "카드 공제가 생각보다 낮은 이유가 뭐예요?",
+    "raw_context": {
+      "spend": {
+        "credit_card_band": "high",
+        "debit_card_band": "low",
+        "traditional_market_band": "low"
+      },
+      "threshold": {
+        "met": true,
+        "excess_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "총 사용액은 높지만 공제율이 높은 체크카드와 전통시장 사용 비중이 낮고, 공제 기준 초과분이 적어 공제액이 낮을 수 있습니다.",
+    "reference_facts": [
+      "체크카드 낮음",
+      "전통시장 낮음",
+      "기준 초과분 낮음"
+    ],
+    "tags": [
+      "tax_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

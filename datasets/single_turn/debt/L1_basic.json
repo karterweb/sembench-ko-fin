@@ -1,0 +1,602 @@
+[
+  {
+    "id": "debt-L1-001",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-002",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-003",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-004",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-005",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-006",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-007",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-008",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-009",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-010",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-011",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-012",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-013",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-014",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L1-015",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 갚을 대출 우선순위 알려줘",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "balance_band": "low_medium_balance"
+        },
+        {
+          "token": "DEBT_B",
+          "type": "auto_loan",
+          "rate_band": "low_rate",
+          "balance_band": "high_balance"
+        }
+      ],
+      "cashflow": {
+        "monthly_surplus_band": "medium"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 성격의 DEBT_A를 먼저 검토하고, 저금리 자동차 할부 성격의 DEBT_B는 후순위로 보는 것이 일반적입니다.",
+    "reference_facts": [
+      "고금리 우선",
+      "DEBT_A 우선",
+      "DEBT_B 후순위"
+    ],
+    "tags": [
+      "repayment_priority"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

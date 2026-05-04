@@ -1,0 +1,557 @@
+[
+  {
+    "id": "banking-L1-001",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-002",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-003",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-004",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-005",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-006",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-007",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-008",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-009",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-010",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-011",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-012",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-013",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-014",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "banking-L1-015",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 자동이체 실패한 건 있어?",
+    "raw_context": {
+      "scheduled_payments": [
+        {
+          "token": "PAY_A",
+          "category": "telecom",
+          "amount_band": "low",
+          "status": "paid"
+        },
+        {
+          "token": "PAY_B",
+          "category": "rent",
+          "amount_band": "high",
+          "status": "failed_insufficient_balance"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "PAY_B가 잔액 부족으로 실패했습니다. PAY_A는 정상 납부됐습니다.",
+    "reference_facts": [
+      "PAY_B 실패",
+      "잔액 부족",
+      "PAY_A 정상"
+    ],
+    "tags": [
+      "scheduled_payment"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

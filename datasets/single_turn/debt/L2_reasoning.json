@@ -1,0 +1,402 @@
+[
+  {
+    "id": "debt-L2-001",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-002",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-003",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-004",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-005",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-006",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "token",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-007",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-008",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-009",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-L2-010",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "마통을 유지하면서 카드론을 갚는 게 나을까요?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate",
+          "reuse_limit": false
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [],
+    "reference_answer": "고금리 카드론 상환을 우선하되, 비상자금이 낮으므로 마이너스통장 한도 유지 여부를 함께 확인해야 합니다.",
+    "reference_facts": [
+      "카드론 고금리",
+      "마통 한도 유지",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "debt_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

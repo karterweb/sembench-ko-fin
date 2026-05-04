@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import subprocess
-from typing import Any
+from typing import Any, cast
 
 from sembench.adapters.base import PseudonymizationAdapter
 
@@ -30,7 +30,7 @@ class CliAdapter(PseudonymizationAdapter):
             text=True,
             check=True,
         )
-        return json.loads(result.stdout)
+        return cast(dict[str, Any], json.loads(result.stdout))
 
     def rehydrate(self, external_response: str, raw_context: dict[str, Any]) -> str:
         input_data = json.dumps(
@@ -43,4 +43,4 @@ class CliAdapter(PseudonymizationAdapter):
             text=True,
             check=True,
         )
-        return json.loads(result.stdout)
+        return str(json.loads(result.stdout))

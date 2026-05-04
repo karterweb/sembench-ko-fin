@@ -1,0 +1,302 @@
+[
+  {
+    "id": "tax-L1-001",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-002",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-003",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-004",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-005",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-006",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-007",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-008",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-009",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "tax-L1-010",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "연말정산에서 의료비 공제 될까요?",
+    "raw_context": {
+      "deductions": [
+        {
+          "category": "medical_expense",
+          "amount_band": "medium",
+          "eligible": true,
+          "requires_documents": true
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "의료비는 공제 대상 가능성이 있으며, 증빙자료 확인이 필요합니다.",
+    "reference_facts": [
+      "의료비 공제 가능",
+      "증빙 필요"
+    ],
+    "tags": [
+      "deduction"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

@@ -4,8 +4,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 from sembench.compliance.checker import ComplianceChecker
 from sembench.core.schema import BenchCase, Domain, Difficulty, TurnType
 

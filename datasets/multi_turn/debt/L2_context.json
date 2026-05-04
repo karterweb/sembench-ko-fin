@@ -1,0 +1,482 @@
+[
+  {
+    "id": "debt-MT-L2-001",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-002",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-003",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-004",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-005",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-006",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "token",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-007",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-008",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-009",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "debt-MT-L2-010",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "multi",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "그럼 마통은 그냥 둬도 돼?",
+    "raw_context": {
+      "debts": [
+        {
+          "token": "DEBT_A",
+          "type": "credit_line",
+          "rate_band": "mid_rate",
+          "reuse_limit": true
+        },
+        {
+          "token": "DEBT_B",
+          "type": "card_loan",
+          "rate_band": "high_rate"
+        }
+      ],
+      "liquidity": {
+        "emergency_buffer_band": "low"
+      }
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "카드론 먼저 갚을까?"
+      },
+      {
+        "role": "assistant",
+        "content": "금리 기준으로는 카드론 우선 검토가 합리적입니다."
+      }
+    ],
+    "reference_answer": "비상자금이 낮다면 마이너스통장 한도는 유지하고, 고금리 카드론 상환을 먼저 검토하는 편이 안전합니다.",
+    "reference_facts": [
+      "마통 한도 유지",
+      "카드론 우선",
+      "비상자금 낮음"
+    ],
+    "tags": [
+      "multi_turn"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

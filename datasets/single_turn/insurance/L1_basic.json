@@ -1,0 +1,702 @@
+[
+  {
+    "id": "insurance-L1-001",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "도수치료 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "도수치료",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "도수치료은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "도수치료",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-002",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "독감 검사 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "독감 검사",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "독감 검사은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "독감 검사",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-003",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "입원비 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "입원비",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "입원비은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "입원비",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-004",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "치과 스케일링 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "치과 스케일링",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "치과 스케일링은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "치과 스케일링",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-005",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "무릎 MRI 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "무릎 MRI",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "무릎 MRI은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "무릎 MRI",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-006",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "도수치료 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "도수치료",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "도수치료은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "도수치료",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-007",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "독감 검사 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "독감 검사",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "독감 검사은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "독감 검사",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-008",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "입원비 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "입원비",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "입원비은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "입원비",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-009",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "치과 스케일링 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "치과 스케일링",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "치과 스케일링은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "치과 스케일링",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-010",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "무릎 MRI 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "무릎 MRI",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "무릎 MRI은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "무릎 MRI",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-011",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "도수치료 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "도수치료",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "도수치료은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "도수치료",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-012",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "독감 검사 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "독감 검사",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "독감 검사은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "독감 검사",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-013",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "입원비 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "입원비",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "입원비은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "입원비",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-014",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "치과 스케일링 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "치과 스케일링",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "치과 스케일링은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "치과 스케일링",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-015",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "무릎 MRI 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "무릎 MRI",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "무릎 MRI은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "무릎 MRI",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-016",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "도수치료 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "도수치료",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "도수치료은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "도수치료",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-017",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "독감 검사 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "독감 검사",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "독감 검사은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "독감 검사",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-018",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "입원비 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "입원비",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "medium"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "입원비은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "입원비",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-019",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "치과 스케일링 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "치과 스케일링",
+        "provider_class": "general_clinic",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "치과 스케일링은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "치과 스케일링",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "insurance-L1-020",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "무릎 MRI 보험 청구 가능해요?",
+    "raw_context": {
+      "claim": {
+        "treatment_category": "무릎 MRI",
+        "provider_class": "large_general_hospital",
+        "receipt_amount_band": "low"
+      },
+      "policy": {
+        "coverage_type": "indemnity_medical_expense",
+        "waiting_period": false,
+        "documents": [
+          "receipt"
+        ]
+      }
+    },
+    "history": [],
+    "reference_answer": "무릎 MRI은 실손 보장 검토 대상입니다. 영수증은 있고, 세부내역서와 의학적 필요성 확인이 추가로 필요할 수 있습니다.",
+    "reference_facts": [
+      "무릎 MRI",
+      "실손 보장 검토",
+      "추가 서류 필요 가능"
+    ],
+    "tags": [
+      "claim_lookup"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

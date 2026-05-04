@@ -6,3 +6,4 @@ max_cost_usd: 150.0
 sample_per_cell: 5
 domains: []
 difficulties: []
+ensemble_judge_for_difficulties: ["L3", "L4"]

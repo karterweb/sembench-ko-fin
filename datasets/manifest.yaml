@@ -9,18 +9,31 @@ single_turn:
     - single_turn/card/L2_reasoning.json
   insurance:
     - single_turn/insurance/L1_basic.json
+    - single_turn/insurance/L2_reasoning.json
   debt:
     - single_turn/debt/L1_basic.json
     - single_turn/debt/L2_reasoning.json
+  banking:
+    - single_turn/banking/L1_basic.json
+    - single_turn/banking/L2_reasoning.json
+  securities:
+    - single_turn/securities/L1_basic.json
+    - single_turn/securities/L2_reasoning.json
+  tax:
+    - single_turn/tax/L1_basic.json
+    - single_turn/tax/L2_reasoning.json
 
 multi_turn:
   card:
-    - multi_turn/card/L2_dispute.json
+    - multi_turn/card/L2_context.json
+  insurance:
+    - multi_turn/insurance/L2_context.json
+  debt:
+    - multi_turn/debt/L2_context.json
 
 adversarial:
   - adversarial/L3_crossref.json
   - adversarial/L4_regulatory.json
 
-# CI smoke: uses sample_per_cell=1, only card L1 for fast gate
 ci_smoke:
   - single_turn/card/L1_basic.json

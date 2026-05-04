@@ -1,0 +1,422 @@
+[
+  {
+    "id": "card-L4-001",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "taxonomy",
+    "raw_utterance": "개인신용정보와 가명정보 경계에 걸리지 않게 카드 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "개인신용정보와 가명정보 경계",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 개인신용정보와 가명정보 경계",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "card-L4-002",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "relation",
+    "raw_utterance": "처리 목적 외 이용 제한에 걸리지 않게 카드 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "처리 목적 외 이용 제한",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 처리 목적 외 이용 제한",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "insurance-L4-003",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "lifecycle",
+    "raw_utterance": "추가정보 분리 보관에 걸리지 않게 보험 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "추가정보 분리 보관",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 추가정보 분리 보관",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "insurance-L4-004",
+    "domain": "insurance",
+    "service": "claim_advisor",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "band",
+    "raw_utterance": "혁신금융서비스 외부 LLM 입력 조건에 걸리지 않게 보험 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "혁신금융서비스 외부 LLM 입력 조건",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 혁신금융서비스 외부 LLM 입력 조건",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "debt-L4-005",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "hybrid",
+    "raw_utterance": "개인신용정보와 가명정보 경계에 걸리지 않게 부채 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "개인신용정보와 가명정보 경계",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 개인신용정보와 가명정보 경계",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "debt-L4-006",
+    "domain": "debt",
+    "service": "debt_optimizer",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "token",
+    "raw_utterance": "처리 목적 외 이용 제한에 걸리지 않게 부채 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "처리 목적 외 이용 제한",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 처리 목적 외 이용 제한",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "banking-L4-007",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "taxonomy",
+    "raw_utterance": "추가정보 분리 보관에 걸리지 않게 뱅킹 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "추가정보 분리 보관",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 추가정보 분리 보관",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "banking-L4-008",
+    "domain": "banking",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "relation",
+    "raw_utterance": "혁신금융서비스 외부 LLM 입력 조건에 걸리지 않게 뱅킹 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "혁신금융서비스 외부 LLM 입력 조건",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 혁신금융서비스 외부 LLM 입력 조건",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "securities-L4-009",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "lifecycle",
+    "raw_utterance": "개인신용정보와 가명정보 경계에 걸리지 않게 증권 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "개인신용정보와 가명정보 경계",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 개인신용정보와 가명정보 경계",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "securities-L4-010",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "band",
+    "raw_utterance": "처리 목적 외 이용 제한에 걸리지 않게 증권 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "처리 목적 외 이용 제한",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 처리 목적 외 이용 제한",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "tax-L4-011",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "hybrid",
+    "raw_utterance": "추가정보 분리 보관에 걸리지 않게 세금 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "추가정보 분리 보관",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "amount_band_high"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 추가정보 분리 보관",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  },
+  {
+    "id": "tax-L4-012",
+    "domain": "tax",
+    "service": "tax_assistant",
+    "turn_type": "single",
+    "difficulty": "L4",
+    "strategy": "token",
+    "raw_utterance": "혁신금융서비스 외부 LLM 입력 조건에 걸리지 않게 세금 사례를 외부 LLM에 넘겨도 돼?",
+    "raw_context": {
+      "regulatory_edge": "혁신금융서비스 외부 LLM 입력 조건",
+      "proposed_payload": {
+        "entity_token": "ENTITY_A",
+        "taxonomy": "domain_safe_category",
+        "exact_amount": "2,500만원"
+      },
+      "processing_purpose": "external_llm_customer_support",
+      "additional_information_location": "private_zone_mapping_table"
+    },
+    "history": [],
+    "reference_answer": "외부 LLM 전달 전 목적 적합성, 필요 최소성, 추가정보 분리, 정확 금액 제거 여부를 검토해야 하며 조건 미충족 시 전달하면 안 됩니다.",
+    "reference_facts": [
+      "목적 적합성",
+      "필요 최소성",
+      "추가정보 분리",
+      "정확 금액 제거"
+    ],
+    "tags": [
+      "regulatory_edge"
+    ],
+    "notes": "",
+    "regulatory_notes": [
+      "가명정보 처리 가이드라인(2026.03.) 혁신금융서비스 외부 LLM 입력 조건",
+      "적정성 검토 및 잔존 위험 관리"
+    ]
+  }
+]

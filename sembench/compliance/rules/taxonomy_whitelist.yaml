@@ -1,0 +1,24 @@
+tokens:
+  - coffee_chain
+  - convenience_store
+  - same_commercial_area
+  - same_amount
+  - near_time_duplicate
+  - near_time_duplicate_within_2_minutes
+  - approved
+  - cancelled
+  - approved_cancelled_pair
+  - diagnostic_imaging_mri
+  - lower_limb_joint
+  - large_general_hospital
+  - indemnity_medical_expense
+  - card_loan
+  - credit_line
+  - auto_loan
+  - high_rate
+  - mid_rate
+  - low_rate
+  - medium_balance
+  - low_medium_balance
+  - high_balance
+  - stable_income

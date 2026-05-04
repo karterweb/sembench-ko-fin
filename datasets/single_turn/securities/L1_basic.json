@@ -1,0 +1,322 @@
+[
+  {
+    "id": "securities-L1-001",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-002",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-003",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-004",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-005",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-006",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "token",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-007",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-008",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-009",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "securities-L1-010",
+    "domain": "securities",
+    "service": "asset_manager",
+    "turn_type": "single",
+    "difficulty": "L1",
+    "strategy": "band",
+    "raw_utterance": "이번 달 배당 들어온 거 있어?",
+    "raw_context": {
+      "events": [
+        {
+          "token": "SEC_A",
+          "asset_class": "domestic_equity",
+          "event": "dividend",
+          "amount_band": "low",
+          "status": "settled"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "이번 달 SEC_A에서 소액 배당이 입금 완료됐습니다.",
+    "reference_facts": [
+      "배당 입금",
+      "국내주식",
+      "입금 완료"
+    ],
+    "tags": [
+      "dividend"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

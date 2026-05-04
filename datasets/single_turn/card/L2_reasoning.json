@@ -1,0 +1,382 @@
+[
+  {
+    "id": "card-L2-001",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-002",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-003",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-004",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-005",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "hybrid",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-006",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "token",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-007",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "taxonomy",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-008",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "relation",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-009",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "lifecycle",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  },
+  {
+    "id": "card-L2-010",
+    "domain": "card",
+    "service": "chatbot",
+    "turn_type": "single",
+    "difficulty": "L2",
+    "strategy": "band",
+    "raw_utterance": "이번 달 식비가 왜 늘었는지 설명해줘",
+    "raw_context": {
+      "monthly_summary": {
+        "food_spend_band": "high",
+        "prior_month_food_spend_band": "medium",
+        "transaction_count_delta": "up"
+      },
+      "drivers": [
+        {
+          "category": "coffee_chain",
+          "relation": "frequency_up"
+        },
+        {
+          "category": "delivery_food",
+          "relation": "weekend_cluster"
+        }
+      ]
+    },
+    "history": [],
+    "reference_answer": "식비 증가는 커피전문점 이용 빈도 증가와 주말 배달음식 결제 집중이 함께 작용한 결과입니다.",
+    "reference_facts": [
+      "커피 빈도 증가",
+      "주말 배달 집중",
+      "식비 증가 원인"
+    ],
+    "tags": [
+      "spend_reasoning"
+    ],
+    "notes": "",
+    "regulatory_notes": []
+  }
+]

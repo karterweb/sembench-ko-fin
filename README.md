@@ -57,7 +57,23 @@ sembench run --config configs/ci_smoke.yaml
 
 # 전체 검증 실행
 sembench run --config configs/full.yaml --out results/run.json
+
+# HTML 리포트
+sembench report html --input results/run.json --out results/report.html
+
+# 여러 실행 결과 비교
+sembench report leaderboard results/run.json
 ```
+
+## 현재 포함된 것
+
+- 6개 도메인(card, insurance, debt, banking, securities, tax) 데이터셋
+- L1/L2 일반 케이스, L3 교차참조 공격, L4 규제 엣지 케이스
+- manifest 기반 `MatrixLoader`
+- YAML 기반 `ComplianceChecker`
+- `semantic-redaction-ko` reference adapter
+- HTML 리포트와 leaderboard
+- 가명정보 처리 가이드라인(2026.03.) 기반 문서와 DPIA 템플릿
 
 ## 규제 컨텍스트
 

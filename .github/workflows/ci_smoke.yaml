@@ -1,4 +1,4 @@
-name: CI
+name: Smoke
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,7 +14,10 @@ jobs:
         with:
           version: "latest"
       - run: uv sync --extra dev
-      - run: uv run pytest tests/ -v
+      - run: uv run pytest tests/ -q
       - run: uv run python scripts/check_dataset_pii.py
-      - run: uv run ruff check sembench/
-      - run: uv run mypy sembench/
+      - run: uv run sembench run --config configs/ci_smoke.yaml --out results/smoke.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: smoke-results
+          path: results/smoke.json

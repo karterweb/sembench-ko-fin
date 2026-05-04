@@ -82,6 +82,7 @@ class BenchCase(BaseModel):
     # Metadata
     tags: list[str] = Field(default_factory=list)
     notes: str = ""
+    regulatory_notes: list[str] = Field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -156,6 +157,7 @@ class RunConfig(BaseModel):
     sample_per_cell: int = 1  # CI smoke = 1, validation = 5
     domains: list[Domain] = Field(default_factory=list)  # empty = all
     difficulties: list[Difficulty] = Field(default_factory=list)  # empty = all
+    ensemble_judge_for_difficulties: list[Difficulty] = Field(default_factory=list)
 
 
 class BenchRun(BaseModel):

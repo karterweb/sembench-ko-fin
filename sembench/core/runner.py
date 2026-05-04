@@ -97,20 +97,37 @@ class BenchRunner:
             reference_response=reference_response,
             sps=sps,
             compliance=compliance,
-            input_tokens=sps.judge_model and 0,  # filled by provider
+            input_tokens=0,  # filled by provider
             cost_usd=0.0,  # updated by caller
         )
 
     def _call_external(self, case: BenchCase, payload: dict[str, Any]) -> str:
         import json
         system = "You are a helpful Korean financial services assistant."
-        user = f"Context: {json.dumps(payload, ensure_ascii=False)}\n\nQuestion: {case.raw_utterance}"
+        history = self._format_history(case)
+        user = (
+            f"{history}"
+            f"Context: {json.dumps(payload, ensure_ascii=False)}\n\n"
+            f"Question: {case.raw_utterance}"
+        )
         resp = self.provider.complete(system, user)
         return resp.content
 
     def _call_external_raw(self, case: BenchCase) -> str:
         import json
         system = "You are a helpful Korean financial services assistant."
-        user = f"Context: {json.dumps(case.raw_context, ensure_ascii=False)}\n\nQuestion: {case.raw_utterance}"
+        history = self._format_history(case)
+        user = (
+            f"{history}"
+            f"Context: {json.dumps(case.raw_context, ensure_ascii=False)}\n\n"
+            f"Question: {case.raw_utterance}"
+        )
         resp = self.provider.complete(system, user)
         return resp.content
+
+    def _format_history(self, case: BenchCase) -> str:
+        if not case.history:
+            return ""
+        lines = ["Conversation history:"]
+        lines.extend(f"{turn.role}: {turn.content}" for turn in case.history)
+        return "\n".join(lines) + "\n\n"

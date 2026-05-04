@@ -4,8 +4,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 from sembench.adapters.builtins.passthrough import PassthroughAdapter
 from sembench.core.runner import BenchRunner
 from sembench.core.schema import BenchCase, RunConfig
